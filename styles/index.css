@@ -1,0 +1,49 @@
+@import "./base.css";
+
+.home .main__heading {
+  font-size: 128px;
+  font-weight: bold;
+}
+
+.home .main__sub-heading {
+  font-size: 40px;
+}
+
+.home .menu path {
+  fill: var(--color-text-on-primary);
+}
+
+.home .close path {
+  fill: var(--color-text-on-primary);
+}
+
+.button-container {
+  /*align buttons */
+  display: flex;
+  margin-top: 100px; /* space away from text */
+}
+
+.button:not(button:last-of-type) {
+  /* to stop margin if any other element is added after the second button */
+  margin-inline-end: 20px;
+}
+
+.button__icon {
+  vertical-align: middle;
+}
+
+@media (max-width: 1220px) {
+  .home .main__heading {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 590px) {
+  .home .main__heading {
+    font-size: 40px;
+  }
+
+  .home .main__sub-heading {
+    font-size: 24px;
+  }
+}
